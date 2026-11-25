@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>임상용 · 중계고기파티</title>
+  <meta name="description" content="중계고기파티 대표 임상용 — 이베리코 흑돼지 전문점" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="grain"></div>
+  </div>
+
+  <main class="stage">
+    <article class="card" id="card">
+      <div class="card-sheen" aria-hidden="true"></div>
+
+      <figure class="avatar" id="avatar">
+        <svg
+          class="character"
+          viewBox="0 0 240 240"
+          role="img"
+          aria-label="임상용 캐릭터 초상"
+        >
+          <defs>
+            <radialGradient id="skinShade" cx="38%" cy="28%" r="72%">
+              <stop offset="0%" stop-color="#f4c8a6" />
+              <stop offset="100%" stop-color="#d99a6c" />
+            </radialGradient>
+            <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#c4471a" />
+              <stop offset="50%" stop-color="#e07a2a" />
+              <stop offset="100%" stop-color="#f0c45a" />
+            </linearGradient>
+            <linearGradient id="apronGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a2420" />
+              <stop offset="100%" stop-color="#12100e" />
+            </linearGradient>
+            <linearGradient id="shirtGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2c3238" />
+              <stop offset="100%" stop-color="#171b20" />
+            </linearGradient>
+          </defs>
+
+          <g class="sparks" opacity="0.85">
+            <circle cx="40" cy="170" r="2.2" fill="#f0c45a" />
+            <circle cx="200" cy="162" r="1.8" fill="#e07a2a" />
+            <circle cx="50" cy="142" r="1.4" fill="#ff8a4c" />
+            <circle cx="190" cy="138" r="1.6" fill="#f0c45a" />
+          </g>
+
+          <g class="flames" opacity="0.9">
+            <path d="M32 200c8-22 4-36-2-48 14 8 22 28 16 48z" fill="url(#flameGrad)" />
+            <path d="M208 200c-8-22-4-36 2-48-14 8-22 28-16 48z" fill="url(#flameGrad)" />
+          </g>
+
+          <!-- torso / chef look -->
+          <ellipse cx="120" cy="228" rx="94" ry="26" fill="url(#apronGrad)" />
+          <path d="M46 214c18-38 46-56 74-56s56 18 74 56" fill="url(#shirtGrad)" />
+          <path
+            d="M78 172c8 14 18 24 42 24s34-10 42-24"
+            fill="none"
+            stroke="#c47a3a"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+          <circle cx="120" cy="204" r="9" fill="#c47a3a" />
+          <path
+            d="M115 205l3.5 3.5 7-8"
+            fill="none"
+            stroke="#1a120c"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <!-- head -->
+          <ellipse class="part head" cx="120" cy="112" rx="66" ry="72" fill="url(#skinShade)" />
+
+          <!-- ears -->
+          <ellipse cx="52" cy="118" rx="11" ry="15" fill="#d99a6c" />
+          <ellipse cx="188" cy="118" rx="11" ry="15" fill="#d99a6c" />
+          <ellipse cx="52" cy="118" rx="5" ry="7" fill="#e8b08a" />
+          <ellipse cx="188" cy="118" rx="5" ry="7" fill="#e8b08a" />
+
+          <!-- hair -->
+          <path
+            d="M54 112c4-56 30-88 66-88s62 32 66 88c-12-26-30-40-66-40s-54 14-66 40z"
+            fill="#1a1715"
+          />
+          <path
+            d="M68 96c16-20 38-28 52-12 10-18 36-24 52-6-20-30-58-38-104 18z"
+            fill="#24201d"
+          />
+          <path d="M58 108c8-18 16-28 22-30-2 12-4 22-8 32z" fill="#1a1715" />
+          <path d="M182 108c-8-18-16-28-22-30 2 12 4 22 8 32z" fill="#1a1715" />
+
+          <!-- brows -->
+          <path
+            d="M80 100c10-8 28-8 38 0"
+            fill="none"
+            stroke="#2a2420"
+            stroke-width="4.5"
+            stroke-linecap="round"
+          />
+          <path
+            d="M122 100c10-8 28-8 38 0"
+            fill="none"
+            stroke="#2a2420"
+            stroke-width="4.5"
+            stroke-linecap="round"
+          />
+
+          <!-- eyes -->
+          <g class="eyes">
+            <ellipse class="eye-white" cx="96" cy="118" rx="14" ry="12" fill="#fff8f0" />
+            <ellipse class="eye-white" cx="144" cy="118" rx="14" ry="12" fill="#fff8f0" />
+            <circle class="pupil left-pupil" cx="98" cy="119" r="6.5" fill="#1d2228" />
+            <circle class="pupil right-pupil" cx="146" cy="119" r="6.5" fill="#1d2228" />
+            <circle class="spark" cx="100" cy="116" r="2.2" fill="#fff" />
+            <circle class="spark" cx="148" cy="116" r="2.2" fill="#fff" />
+          </g>
+
+          <!-- nose -->
+          <path
+            d="M120 118c4 10 8 16 0 22"
+            fill="none"
+            stroke="#c8865d"
+            stroke-width="3.5"
+            stroke-linecap="round"
+          />
+
+          <!-- mouth -->
+          <path
+            class="mouth"
+            d="M104 152c10 12 26 12 36 0"
+            fill="none"
+            stroke="#b45d45"
+            stroke-width="4.5"
+            stroke-linecap="round"
+          />
+
+          <!-- blush -->
+          <ellipse cx="78" cy="138" rx="10" ry="6" fill="#ef8f78" opacity="0.4" />
+          <ellipse cx="162" cy="138" rx="10" ry="6" fill="#ef8f78" opacity="0.4" />
+
+          <!-- charcoal bandana -->
+          <path
+            d="M58 78c16-24 42-34 62-34s46 10 62 34c-20-8-42-12-62-12s-42 4-62 12z"
+            fill="#8b2e1a"
+          />
+          <path
+            d="M58 78c18-5 40-8 62-8s44 3 62 8"
+            fill="none"
+            stroke="#c4471a"
+            stroke-width="2.5"
+          />
+          <path d="M176 74l16 20-9 4-13-18z" fill="#8b2e1a" />
+          <path d="M184 84l12 7-3 5-12-8z" fill="#c4471a" />
+
+          <!-- tongs -->
+          <g class="tongs" transform="translate(176 178) rotate(16)">
+            <path d="M0 0v32" stroke="#c9b29a" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M7 4v28" stroke="#c9b29a" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M0 0c3.5-5 7-5 7 0" fill="none" stroke="#c9b29a" stroke-width="2.8" />
+            <path d="M-2 32h4M5 32h4" stroke="#a8896e" stroke-width="2.2" stroke-linecap="round" />
+          </g>
+        </svg>
+      </figure>
+
+      <header class="identity">
+        <p class="brand">중계고기파티</p>
+        <h1 class="name">임상용</h1>
+        <p class="role">대표</p>
+        <p class="tagline">
+          한번도 안 먹어본 사람은 있어도,<br />
+          한번만 먹어본 사람은 없다.
+        </p>
+        <p class="specialty">이베리코 흑돼지 전문점</p>
+      </header>
+
+      <ul class="contacts">
+        <li>
+          <a class="contact" href="mailto:sylims@hanmail.net" data-label="메일">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 7 9-7" />
+              </svg>
+            </span>
+            <span class="contact-text">sylims@hanmail.net</span>
+          </a>
+        </li>
+        <li>
+          <a class="contact" href="tel:010-2774-3024" data-label="전화">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6.5 3.5h3l1.5 5-2 1.5a13 13 0 006 6l1.5-2 5 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 013.5 5.7 2 2 0 015.5 3.5z" />
+              </svg>
+            </span>
+            <span class="contact-text">010-2774-3024</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="contact"
+            href="https://naver.me/xTbjR4Uz"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-label="네이버"
+          >
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M4 4h5.2l5.1 8.2V4H20v16h-5.2L9.7 11.8V20H4V4z" />
+              </svg>
+            </span>
+            <span class="contact-text">네이버 플레이스</span>
+          </a>
+        </li>
+      </ul>
+
+      <button class="copy-btn" type="button" id="copyBtn">연락처 복사</button>
+    </article>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
